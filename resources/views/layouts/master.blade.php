@@ -15,7 +15,15 @@
         <link rel="stylesheet" href="{{mix('css/app.css')}}">
     </head>
     <body>
-
+        {{-- => decorative ellipses --}}
+        <ul class="ellipses-list">
+            <li class="ellipses-item"></li>
+            <li class="ellipses-item"></li>
+            <li class="ellipses-item"></li>
+            <li class="ellipses-item"></li>
+            <li class="ellipses-item"></li>
+        </ul>
+        {{-- decorative ellipses <= --}}
         @include('layouts.header')
 
         @yield('content')
