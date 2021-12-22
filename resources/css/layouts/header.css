@@ -611,6 +611,7 @@
     .feedback-hand {
         top: 540px;
         right: 30%;
+        max-width: 350px;
     }
     .feedback-modal-bg {
         transform: scale(1.5);

@@ -27,7 +27,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 1000vh;
 
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
@@ -241,6 +241,9 @@ link:hover {
 }
 @media screen and (max-width: 767px) {
     /** small */
+    *:focus {
+        outline: none;
+    }
 }
 @media screen and (max-width: 575px) {
     /** extra small */

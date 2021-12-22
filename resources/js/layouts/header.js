@@ -19,7 +19,8 @@ if (header) {
     const feedbackOpen = header.querySelector('.feedback-btn'),
         feedbackModal = header.querySelector('.feedback-modal'),
         feedbackForm = feedbackModal.querySelector('.feedback-form'),
-        feedbackCloseBtns = feedbackModal.querySelectorAll('[data-action="close-modal"]');
+        feedbackCloseBtns = feedbackModal.querySelectorAll('[data-action="close-modal"]'),
+        feedbackHand = feedbackModal.querySelector('.feedback-hand');
 
     feedbackOpen.onclick = e => {
         e.preventDefault();
@@ -36,5 +37,8 @@ if (header) {
         feedbackForm.classList.remove('fail');
         feedbackForm.classList.remove('success');
     });
+    if (window.innerHeight < 700) {
+        feedbackHand.style.display = 'none';
+    }
     //* feedback modal <=
 }
