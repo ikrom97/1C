@@ -27,7 +27,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    min-height: 1000vh;
+    min-height: 100vh;
 
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
@@ -863,7 +863,6 @@ link:hover {
     .feedback-hand {
         top: 540px;
         right: 30%;
-        max-width: 350px;
     }
     .feedback-modal-bg {
         transform: scale(1.5);
