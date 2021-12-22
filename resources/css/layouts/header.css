@@ -222,18 +222,34 @@
     border-radius: 8px;
     overflow: hidden;
 }
-.feedback-frame {
+.feedback-modal-inner::before {
+    content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 56px;
+    left: 32px;
     z-index: -1;
 
+    display: block;
     height: calc(100% - 88px);
-    width: calc(100% - 64px);
-    margin-top: 56px;
-    margin-right: 32px;
-    margin-bottom: 32px;
-    margin-left: 32px;
+    width: calc(100% - 70px);
+
+    background-image: url("../img/dashes.png");
+    background-size: cover;
+}
+.feedback-modal-inner::after {
+    content: "";
+    position: absolute;
+    top: 56px;
+    right: 32px;
+    z-index: -1;
+
+    display: block;
+    height: calc(100% - 88px);
+    width: 4px;
+
+    background-image: url("../img/dashes.png");
+    background-position-x: right;
+    background-size: cover;
 }
 .feedback-close-btn {
     position: fixed;
@@ -298,15 +314,20 @@
     height: 48px;
     padding-left: 16px;
     padding-right: 16px;
+
     border: none;
     border-radius: 8px;
 }
 .feedback-input:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 .feedback-btn-wrapper {
     position: relative;
+
     display: flex;
     height: 52px;
+
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 4px 16px rgb(230 36 43 / 50%);
@@ -325,13 +346,16 @@
     position: absolute;
     top: 0px px;
     left: 0px;
+
     width: 100%;
 }
 .feedback-fail-msg {
     position: absolute;
     top: 0px;
     left: 0px;
+
     width: 100%;
+
     color: #fff;
     background: radial-gradient(
             269.69% 100% at 50% 100%,
@@ -353,7 +377,9 @@
     position: absolute;
     top: 0px;
     left: 0px;
+
     width: 100%;
+
     color: #fff;
     background: radial-gradient(
             269.69% 100% at 50% 100%,
@@ -375,8 +401,10 @@
     position: absolute;
     top: 0px;
     right: 0px;
+
     display: flex;
     margin: 24px;
+
     border: none;
     background: transparent;
     cursor: pointer;
@@ -388,13 +416,19 @@
     margin-bottom: 48px;
     margin-left: auto;
     gap: 0px 32px;
+
     font-size: 16px;
 }
 .feedback-hand {
     position: absolute;
-    top: 440px;
-    right: 232px;
+    top: 460px;
+    right: 260px;
     z-index: -1;
+
+    width: 660px;
+
+    filter: drop-shadow(0px 128px 128px rgba(29, 29, 29, 0.5));
+    transform: matrix(-0.94, 0.33, 0.33, 0.94, 0, 0);
 }
 .feedback-footer-link {
 }
@@ -508,7 +542,80 @@
     }
 }
 @media screen and (max-width: 666px) {
-    
+    .feedback-modal {
+        align-items: flex-start;
+        overflow-y: scroll;
+    }
+    .feedback-close-btn {
+        display: none;
+    }
+    .feedback-modal-inner {
+        height: 100%;
+        min-height: 626px;
+        max-height: 100%;
+        width: 100%;
+        min-width: 0px;
+        max-width: 100%;
+        padding-top: 48px;
+        padding-right: 5%;
+        padding-bottom: 32px;
+        padding-left: 5%;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+    .feedback-modal-inner::before {
+        top: 48px;
+        left: 0px;
+        height: calc(100% - 80px);
+        width: calc(90% - 6px);
+        margin-left: 5%;
+    }
+    .feedback-modal-inner::after {
+        top: 48px;
+        right: 0px;
+        height: calc(100% - 80px);
+        width: 4px;
+        margin-right: 5%;
+    }
+    .feedback-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 48px;
+        margin-bottom: 16px;
+        width: 80%;
+    }
+    .feedback-modal-title {
+        margin-bottom: 8px;
+    }
+    .feedback-logo {
+        order: -1;
+        align-self: flex-start;
+        margin-bottom: 30px;
+    }
+    .feedback-form {
+        max-width: 80%;
+        gap: 8px 0px;
+        margin-bottom: 24px;
+    }
+    .feedback-modal-close {
+        margin: 17px;
+    }
+    .feedback-footer {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 80%;
+        margin-right: auto;
+        margin-bottom: 16px;
+    }
+    .feedback-hand {
+        top: 540px;
+        right: 30%;
+    }
+    .feedback-modal-bg {
+        transform: scale(1.5);
+        right: 25%;
+    }
 }
 @media screen and (max-width: 494px) {
     .header-grid {

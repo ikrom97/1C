@@ -5,7 +5,7 @@
 @section('content')
     <main class="home-page">
         <div class="container">
-            <h1>Home page</h1>
+            {{-- <h1>Home page</h1> --}}
         </div>
     </main>
 @endsection
