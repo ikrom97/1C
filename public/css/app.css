@@ -664,7 +664,7 @@ h2 {
 
     width: 320px;
 
-    filter: drop-shadow(0px 128px 128px rgba(29, 29, 29, 0.5));
+    filter: drop-shadow(-40px 24px 24px rgba(29, 29, 29, 0.5));
     transform: matrix(1, -2, 2, 1, 0, 0);
 }
 .feedback-footer-link:hover {
@@ -925,7 +925,7 @@ h2 {
     display: block;
     min-width: 1200px;
 
-    filter: drop-shadow(0px 128px 128px rgba(29, 29, 29, 0.5));
+    filter: drop-shadow(0px 100px 56px rgba(29, 29, 29, 0.5));
     pointer-events: none;
 }
 .welcome-hand.red-hand {
@@ -1340,7 +1340,7 @@ h2 {
 
     width: 800px;
     
-    filter: drop-shadow(0px -128px 128px rgba(29, 29, 29, 0.5));
+    filter: drop-shadow(40px -56px 34px rgba(29, 29, 29, 0.5));
     transform: matrix(-1, 1, -1, -1, 0, 0);
     pointer-events: none;
 }
