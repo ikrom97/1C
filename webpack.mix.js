@@ -19,6 +19,7 @@ mix.js(['resources/js/layouts/master.js',
     .styles(['resources/css/layouts/master.css',
         'resources/css/layouts/header.css',
         'resources/css/layouts/footer.css',
-        'resources/css/pages/home.css'], 'public/css/app.css')
+        'resources/css/pages/home.css',
+        'resources/css/components/products-card.css'], 'public/css/app.css')
 
     .version();

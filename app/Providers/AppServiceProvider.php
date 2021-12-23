@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Product;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
@@ -26,8 +27,16 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrap();
 
+
         view()->composer('*', function ($view) {
-            return $view->with('route', \Route::currentRouteName());
+            $products = Product::select(
+                'id',
+                'title',
+                'trashed',
+            )->where('trashed', false)->get();
+
+            return $view->with('route', \Route::currentRouteName())
+                ->with('products', $products);
         });
     }
 }

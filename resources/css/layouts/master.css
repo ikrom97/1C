@@ -94,7 +94,7 @@ h2 {
     font-weight: 600;
 }
 .button,
-link {
+.link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +135,7 @@ link {
     box-shadow: 0px 2px 8px rgba(29, 29, 29, 0.25);
 }
 .button:hover,
-link:hover {
+.link:hover {
     box-shadow: none;
 }
 /** => decorative ellipses */
