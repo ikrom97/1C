@@ -475,7 +475,7 @@
 
     width: 800px;
     
-    filter: drop-shadow(40px -56px 34px rgba(29, 29, 29, 0.5));
+    filter: drop-shadow(40px -56px 64px rgba(29, 29, 29, 0.5));
     transform: matrix(-1, 1, -1, -1, 0, 0);
     pointer-events: none;
 }
