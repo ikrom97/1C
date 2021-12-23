@@ -61,7 +61,7 @@ if (header) {
     feedbackForm.classList.remove('success');
   });
 
-  if (window.innerHeight < 700) {
+  if (window.innerHeight < 700 || window.innerWidth < 444) {
     feedbackHand.style.display = 'none';
   } //* feedback modal <=
 

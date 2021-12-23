@@ -54,14 +54,13 @@
 }
 .welcome-hand {
     position: absolute;
-    bottom: 40px;
-    right: -64px;
+    bottom: -64px;
+    right: -40px;
 
     display: block;
-    min-width: 1000px;
+    min-width: 1200px;
 
     filter: drop-shadow(0px 128px 128px rgba(29, 29, 29, 0.5));
-    transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
     pointer-events: none;
 }
 .welcome-hand.red-hand {
@@ -471,10 +470,14 @@
 }
 .feedback-section-hand {
     position: absolute;
-    top: -80px;
-    left: 560px;
+    top: -148px;
+    left: 800px;
+
+    width: 800px;
+    
     filter: drop-shadow(0px -128px 128px rgba(29, 29, 29, 0.5));
-    transform: matrix(1, 0, 0, -1, 0, 0);
+    transform: matrix(-1, 1, -1, -1, 0, 0);
+    pointer-events: none;
 }
 .feedback-section-hand.yellow-hand {
     filter: none;
