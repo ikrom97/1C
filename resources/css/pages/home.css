@@ -1,6 +1,9 @@
 /*! => home page */
 .home-page {
 }
+.none {
+    display: none;
+}
 /** => welcome section */
 .welcome-section {
     padding-top: 24px;
@@ -16,11 +19,11 @@
 }
 .welcome-right {
     align-self: center;
+    margin-right: 48px;
 }
 .welcome-title {
     width: max-content;
     padding: 0px;
-    margin-right: 112px;
     margin-bottom: 24px;
 
     font-weight: 700;
@@ -474,7 +477,7 @@
     left: 800px;
 
     width: 800px;
-    
+
     filter: drop-shadow(40px -56px 64px rgba(29, 29, 29, 0.5));
     transform: matrix(-1, 1, -1, -1, 0, 0);
     pointer-events: none;

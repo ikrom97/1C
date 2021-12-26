@@ -42,3 +42,23 @@
 .products-card-link {
     width: 200px;
 }
+/*! => adaptive and responsive */
+@media screen and (max-width: 1439px) {
+    /** desktop */
+}
+@media screen and (max-width: 1199px) {
+    /** desktop */
+}
+@media screen and (max-width: 991px) {
+    /** tablet */
+}
+@media screen and (max-width: 767px) {
+    /** tablet */
+}
+@media screen and (max-width: 575px) {
+    /** mobile */
+}
+@media screen and (max-width: 389px) {
+    /** mobile */
+}
+/*! adaptive and responsive <= */

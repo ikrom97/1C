@@ -229,23 +229,45 @@ h2 {
     transform: rotate(118.95deg);
 }
 /** decorative ellipses <= */
-/*! => adaptive */
-@media screen and (max-width: 1443px) {
-    /** extra large */
+
+/*! => adaptive and responsive */
+@media screen and (max-width: 1439px) {
+    /** desktop */
+    .container {
+        max-width: 1060px;
+    }
 }
 @media screen and (max-width: 1199px) {
-    /** large */
+    /** desktop */
+    .container {
+        max-width: 852px;
+    }
 }
 @media screen and (max-width: 991px) {
-    /** medium */
-}
-@media screen and (max-width: 767px) {
-    /** small */
+    /** tablet */
+    .container {
+        max-width: 698px;
+    }
     *:focus {
         outline: none;
     }
 }
-@media screen and (max-width: 575px) {
-    /** extra small */
+@media screen and (max-width: 767px) {
+    /** tablet */
+    .container {
+        max-width: 506px;
+    }
 }
-/*! adaptive <= */
+@media screen and (max-width: 575px) {
+    /** mobile */
+    .container {
+        max-width: 360px;
+    }
+}
+@media screen and (max-width: 389px) {
+    /** mobile */
+    .container {
+        max-width: 90%;
+    }
+}
+/*! adaptive and responsive <= */

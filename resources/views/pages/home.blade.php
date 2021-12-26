@@ -10,7 +10,7 @@
                     <h1 class="welcome-title">
                         <b>Автоматизируем</b><br>ваши бизнес-процессы
                     </h1>
-                    <p class="welcome-subtitle">Наша компания является официальным партнером фирмы «1С» и имеет статус «1С:Франчайзи».</p>
+                    <p class="welcome-subtitle">Наша компания является официальным партнером фирмы «1С» и имеет статус «1С:Франчайзинг».</p>
                     <a class="link link--yellow welcome-link" href="#">Наши услуги</a>
                 </div>
                 <div class="welcome-left">
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <div class="container">
+        <div class="container ">
             <div class="section-joiner">
                 <div class="section-joiner-item"><i></i></div>
                 <div class="section-joiner-item"><i></i></div>
