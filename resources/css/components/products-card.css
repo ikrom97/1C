@@ -9,7 +9,7 @@
     height: 320px;
 
     text-align: center;
-    background: #f5f5f5;
+    background-color: #f5f5f5;
     border-radius: 8px;
 }
 .products-card:hover {
@@ -42,7 +42,7 @@
 .products-card-link {
     width: 200px;
 }
-/*! => adaptive and responsive */
+/*! => adaptive */
 @media screen and (max-width: 1439px) {
     /** desktop */
 }
@@ -61,4 +61,4 @@
 @media screen and (max-width: 389px) {
     /** mobile */
 }
-/*! adaptive and responsive <= */
+/*! adaptive <= */

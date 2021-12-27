@@ -1,508 +1,504 @@
 /*! => home page */
-.home-page {
-}
 .none {
-    display: none;
+  display: none;
 }
 /** => welcome section */
 .welcome-section {
-    padding-top: 24px;
-    padding-bottom: 72px;
+  padding-top: 24px;
+  padding-bottom: 72px;
 }
 .welcome-container {
-    display: flex;
-    flex-direction: row-reverse;
-    min-height: 440px;
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 440px;
 
-    background: #ffffff;
-    border-radius: 8px;
+  background: #ffffff;
+  border-radius: 8px;
 }
 .welcome-right {
-    align-self: center;
-    margin-right: 48px;
+  align-self: center;
+  margin-right: 48px;
 }
 .welcome-title {
-    width: max-content;
-    padding: 0px;
-    margin-bottom: 24px;
+  width: max-content;
+  padding: 0px;
+  margin-bottom: 24px;
 
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 0.7;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 0.7;
 }
 .welcome-title b {
-    color: #d71920;
+  color: #d71920;
 }
 .welcome-subtitle {
-    max-width: 376px;
-    margin-bottom: 48px;
+  max-width: 376px;
+  margin-bottom: 48px;
 
-    font-size: 16px;
+  font-size: 16px;
 }
 .welcome-link {
-    max-width: 312px;
-    height: 58px;
+  max-width: 312px;
+  height: 58px;
 }
 .welcome-left {
-    position: relative;
-    flex-grow: 1;
+  position: relative;
+  flex-grow: 1;
 }
 .welcome-left-bg {
-    position: absolute;
-    top: calc(50% - 193px);
-    right: 80px;
+  position: absolute;
+  top: calc(50% - 193px);
+  right: 80px;
 
-    opacity: 0.5;
-    pointer-events: none;
+  opacity: 0.5;
+  pointer-events: none;
 }
 .welcome-hand {
-    position: absolute;
-    bottom: -64px;
-    right: -40px;
+  position: absolute;
+  bottom: -100px;
+  right: -40px;
 
-    display: block;
-    min-width: 1200px;
+  display: block;
+  min-width: 1200px;
 
-    filter: drop-shadow(0px 100px 56px rgba(29, 29, 29, 0.5));
-    pointer-events: none;
+  filter: drop-shadow(0px 100px 56px rgba(29, 29, 29, 0.5));
+  pointer-events: none;
 }
 .welcome-hand.red-hand {
-    filter: none;
-    opacity: 0;
-    transition: 0.3s;
+  filter: none;
+  opacity: 0;
+  transition: 0.3s;
 }
 .welcome-container:hover .welcome-hand.red-hand {
-    opacity: 1;
+  opacity: 1;
 }
 /** welcome section <= */
+
 /** => whywe section */
 .whywe-section {
-    padding-top: 72px;
+  padding-top: 72px;
 }
 .whywe-container {
-    background: #ffffff;
-    border: 1px solid rgba(77, 77, 77, 0.25);
-    box-shadow: 0px 8px 8px rgb(29 29 29 / 25%);
-    border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(77, 77, 77, 0.25);
+  box-shadow: 0px 8px 8px rgb(29 29 29 / 25%);
+  border-radius: 8px;
 }
 .whywe-inner {
-    position: relative;
-    z-index: 0;
+  position: relative;
+  z-index: 0;
 
-    margin-top: 32px;
-    margin-right: 32px;
-    margin-bottom: 64px;
-    margin-left: 32px;
-    padding-top: 96px;
-    padding-right: 56px;
-    padding-bottom: 96px;
-    padding-left: 56px;
+  margin-top: 32px;
+  margin-right: 32px;
+  margin-bottom: 64px;
+  margin-left: 32px;
+  padding-top: 96px;
+  padding-right: 56px;
+  padding-bottom: 96px;
+  padding-left: 56px;
 }
 .whywe-inner::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
 
-    display: block;
-    height: 100%;
-    width: calc(100% - 6px);
+  display: block;
+  height: 100%;
+  width: calc(100% - 6px);
 
-    background-image: url("../img/dashes.png");
-    background-size: cover;
+  background-image: url("../img/dashes.png");
+  background-size: cover;
 }
 .whywe-inner::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
 
-    display: block;
-    height: 100%;
-    width: 6px;
+  display: block;
+  height: 100%;
+  width: 6px;
 
-    background-image: url("../img/dashes.png");
-    background-position-x: right;
-    background-size: cover;
+  background-image: url("../img/dashes.png");
+  background-position-x: right;
+  background-size: cover;
 }
 .whywe-title {
-    padding: 0px;
-    margin-bottom: 48px;
+  padding: 0px;
+  margin-bottom: 48px;
 
-    font-weight: 700;
-    text-align: center;
+  font-weight: 700;
+  text-align: center;
 }
 .whywe-list {
-    position: relative;
+  position: relative;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px 24px;
 }
 .whywe-list::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 148px);
-    left: 40px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: calc(50% - 148px);
+  left: 40px;
+  z-index: -1;
 
-    display: block;
-    height: 260px;
-    width: 68%;
+  display: block;
+  height: 260px;
+  width: 68%;
 
-    background-image: url(../img/whywe-bg.png);
-    background-size: contain;
-    background-position: left center;
-    background-repeat: no-repeat;
+  background-image: url(../img/whywe-bg.png);
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 .whywe-list-item {
-    display: grid;
-    grid-template-columns: 80px auto;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0px 16px;
+  display: grid;
+  grid-template-columns: 80px auto;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0px 16px;
 }
 .whywe-list-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 80px;
-    min-width: 80px;
-    grid-row: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  min-width: 80px;
+  grid-row: 1/3;
 
-    border-radius: 50%;
-    background: radial-gradient(
-            269.69% 100% at 50% 100%,
-            rgba(230, 36, 43, 0.2) 0%,
-            rgba(239, 105, 27, 0.2) 37.5%,
-            rgba(255, 221, 0, 0.2) 100%
-        ),
-        linear-gradient(0deg, #d71920, #d71920), #d71920;
-}
-.whywe-list-icon svg {
+  border-radius: 50%;
+  background: radial-gradient(
+      269.69% 100% at 50% 100%,
+      rgba(230, 36, 43, 0.2) 0%,
+      rgba(239, 105, 27, 0.2) 37.5%,
+      rgba(255, 221, 0, 0.2) 100%
+    ),
+    linear-gradient(0deg, #d71920, #d71920), #d71920;
 }
 @keyframes escort {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(60deg);
-    }
-    100% {
-        transform: rotate(60deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
 }
 .whywe-list-item:first-child:hover .whywe-list-icon svg {
-    animation-name: escort;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+  animation-name: escort;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 .equalizer {
-    height: 36px;
-    width: 36px;
-    margin-bottom: 4px;
-    display: flex;
-    align-items: flex-end;
-    gap: 0px 3px;
+  height: 36px;
+  width: 36px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: flex-end;
+  gap: 0px 3px;
 }
 
 .equalizer-item {
-    width: 10px;
+  width: 10px;
 
-    background: #ffffff;
-    box-shadow: 0px 2px 8px rgb(29 29 29 / 25%);
-    border-radius: 2px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgb(29 29 29 / 25%);
+  border-radius: 2px;
 }
 .equalizer-item:first-child {
-    height: 60%;
+  height: 60%;
 }
 @keyframes equalizer-first {
-    0% {
-        height: 50%;
-    }
-    50% {
-        height: 80%;
-    }
-    100% {
-        height: 50%;
-    }
+  0% {
+    height: 50%;
+  }
+  50% {
+    height: 80%;
+  }
+  100% {
+    height: 50%;
+  }
 }
 .whywe-list-item:nth-child(2):hover .equalizer-item:first-child {
-    animation-name: equalizer-first;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+  animation-name: equalizer-first;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 .equalizer-item:nth-child(2) {
-    height: 90%;
+  height: 90%;
 }
 @keyframes equalizer-second {
-    0% {
-        height: 90%;
-    }
-    43% {
-        height: 30%;
-    }
-    93% {
-        height: 100%;
-    }
-    100% {
-        height: 90%;
-    }
+  0% {
+    height: 90%;
+  }
+  43% {
+    height: 30%;
+  }
+  93% {
+    height: 100%;
+  }
+  100% {
+    height: 90%;
+  }
 }
 .whywe-list-item:nth-child(2):hover .equalizer-item:nth-child(2) {
-    animation-name: equalizer-second;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+  animation-name: equalizer-second;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 .equalizer-item:last-child {
-    height: 40%;
+  height: 40%;
 }
 @keyframes equalizer-third {
-    0% {
-        height: 40%;
-    }
-    50% {
-        height: 20%;
-    }
-    100% {
-        height: 40%;
-    }
+  0% {
+    height: 40%;
+  }
+  50% {
+    height: 20%;
+  }
+  100% {
+    height: 40%;
+  }
 }
 .whywe-list-item:nth-child(2):hover .equalizer-item:last-child {
-    animation-name: equalizer-third;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+  animation-name: equalizer-third;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 @keyframes client-orient {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(-45deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    75% {
-        transform: rotate(45deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .whywe-list-item:last-child:hover .whywe-list-icon svg {
-    animation-name: client-orient;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+  animation-name: client-orient;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .whywe-list-title {
-    align-self: end;
-    font-weight: 600;
-}
-.whywe-list-subtitle {
+  align-self: end;
+  font-weight: 600;
 }
 .advantages-title {
-    padding-top: 144px;
-    padding-bottom: 48px;
-    max-width: 776px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
+  padding-top: 144px;
+  padding-bottom: 48px;
+  max-width: 776px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
 }
 .advantages-list {
-    max-width: 776px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 8px 64px;
-    font-size: 16px;
+  max-width: 776px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px 64px;
+  font-size: 16px;
 }
 .advantages-list-item {
-    display: flex;
-    align-items: center;
-    gap: 0px 16px;
-}
-.advantages-list-item svg {
+  display: flex;
+  align-items: center;
+  gap: 0px 16px;
 }
 /** whywe section <= */
-/* => section joiner */
-.section-joiner {
-    position: relative;
 
-    height: 16px;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 72px;
-    margin-left: 72px;
+/** => section joiner */
+.section-joiner {
+  position: relative;
+
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 72px;
+  margin-left: 72px;
 }
 .section-joiner-item {
-    position: relative;
-    z-index: 0;
-    transform: translateY(-24px);
+  position: relative;
+  z-index: 0;
+  transform: translateY(-24px);
 
-    display: block;
-    width: 6px;
-    min-height: 64px;
+  display: block;
+  width: 6px;
+  min-height: 64px;
 }
 .section-joiner-item::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  z-index: -1;
 
-    display: block;
-    height: 18px;
-    width: 18px;
+  display: block;
+  height: 18px;
+  width: 18px;
 
-    border-radius: 50%;
-    background: #f5f5f5;
-    box-shadow: inset 0px 1px 4px rgb(0 0 0 / 25%);
+  border-radius: 50%;
+  background: #f5f5f5;
+  box-shadow: inset 0px 1px 4px rgb(0 0 0 / 25%);
 }
 .section-joiner-item::after {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: -6px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: -6px;
+  z-index: -1;
 
-    display: block;
-    height: 18px;
-    width: 18px;
+  display: block;
+  height: 18px;
+  width: 18px;
 
-    background: #ffde0a;
-    box-shadow: inset 0px 1px 4px rgb(0 0 0 / 25%);
-    border-radius: 25px;
+  background: #ffde0a;
+  box-shadow: inset 0px 1px 4px rgb(0 0 0 / 25%);
+  border-radius: 25px;
 }
 .section-joiner-item i {
-    display: block;
-    height: 100%;
-    width: 100%;
+  display: block;
+  height: 100%;
+  width: 100%;
 
-    border-radius: 25px;
-    background: radial-gradient(750% 68.18% at 50% 0%, #c9c9c9 0%, rgba(255, 255, 255, 0) 100%),
-        radial-gradient(166.74% 77.27% at 50% 118.18%, #c9c9c9 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+  border-radius: 25px;
+  background: radial-gradient(750% 68.18% at 50% 0%, #c9c9c9 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(166.74% 77.27% at 50% 118.18%, #c9c9c9 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
 }
-/* section joiner <= */
+/** section joiner <= */
+
 /** => products section */
 .products-section {
-    margin-bottom: 72px;
+  margin-bottom: 72px;
 }
 .products-section-inner {
-    position: relative;
-    z-index: 0;
+  position: relative;
+  z-index: 0;
 
-    margin-top: 64px;
-    margin-right: 32px;
-    margin-bottom: 32px;
-    margin-left: 32px;
-    padding-bottom: 80px;
+  margin-top: 64px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  margin-left: 32px;
+  padding-bottom: 80px;
 }
 .products-section-inner::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: -1px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  z-index: -1;
 
-    display: block;
-    height: 100%;
-    width: calc(100% - 6px);
+  display: block;
+  height: 100%;
+  width: calc(100% - 6px);
 
-    background-image: url("../img/dashes-long.png");
-    background-size: cover;
+  background-image: url("../img/dashes-long.png");
+  background-size: cover;
 }
 .products-section-inner::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: -1px;
-    z-index: -1;
-    display: block;
-    height: 100%;
-    width: 6px;
-    background-image: url("../img/dashes-long.png");
-    background-position-x: right;
-    background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -1px;
+  z-index: -1;
+  display: block;
+  height: 100%;
+  width: 6px;
+  background-image: url("../img/dashes-long.png");
+  background-position-x: right;
+  background-size: cover;
 }
 .products-section-title {
-    max-width: 970px;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 970px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .products-section-subtitle {
-    width: 970px;
-    margin-right: auto;
-    margin-bottom: 48px;
-    margin-left: auto;
-    padding-right: 510px;
+  width: 970px;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-left: auto;
+  padding-right: 510px;
 }
 .products-list {
-    width: 970px;
-    margin-right: auto;
-    margin-left: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
-}
-.products-list-item {
+  width: 970px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
 /** products section <= */
+
 /** => feedback section */
 .feedback-section {
-    padding-top: 72px;
-    padding-bottom: 72px;
-    overflow-x: clip;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  overflow-x: clip;
 }
 .feedback-section-container {
-    position: relative;
-    padding-left: 96px;
+  position: relative;
+  padding-left: 96px;
 }
 .feedback-section-title {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 .feedback-section-text {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 .feedback-section .feedback-form {
-    position: relative;
-    margin: 0px;
+  position: relative;
+  margin: 0px;
 }
 .feedback-section-hand {
-    position: absolute;
-    top: -148px;
-    left: 800px;
+  position: absolute;
+  top: -148px;
+  left: 800px;
 
-    width: 800px;
+  width: 800px;
 
-    filter: drop-shadow(40px -56px 64px rgba(29, 29, 29, 0.5));
-    transform: matrix(-1, 1, -1, -1, 0, 0);
-    pointer-events: none;
+  filter: drop-shadow(40px -56px 64px rgba(29, 29, 29, 0.5));
+  transform: matrix(-1, 1, -1, -1, 0, 0);
+  pointer-events: none;
 }
 .feedback-section-hand.yellow-hand {
-    filter: none;
-    opacity: 0;
-    transition: 0.3s;
+  filter: none;
+  opacity: 0;
+  transition: 0.3s;
 }
 .feedback-section:hover .feedback-section-hand.yellow-hand {
-    opacity: 1;
+  opacity: 1;
 }
 /** feedback section <= */
+
 /** => projects-section */
 .projects-section {
-    padding-top: 72px;
+  padding-top: 72px;
 }
 .projects-container {
-    background: #ffffff;
-    border-radius: 8px;
+  background: #ffffff;
+  border-radius: 8px;
 }
 .projects-title {
-    max-width: 970px;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 970px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /** projects-section <= */
+
 /*! home page <= */

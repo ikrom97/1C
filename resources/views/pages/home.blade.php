@@ -4,7 +4,8 @@
 
 @section('content')
     <main class="home-page">
-        <section class="welcome-section">
+
+        <section class="welcome-section none">
             <div class="container welcome-container">
                 <div class="welcome-right">
                     <h1 class="welcome-title">
@@ -23,7 +24,8 @@
                 </div>
             </div>
         </section>
-        <section class="whywe-section">
+
+        <section class="whywe-section none">
             <div class="container whywe-container">
                 <div class="whywe-inner">
                     <h2 class="whywe-title">Почему именно мы</h2>
@@ -140,7 +142,8 @@
                 </div>
             </div>
         </section>
-        <div class="container ">
+
+        <div class="container none">
             <div class="section-joiner">
                 <div class="section-joiner-item"><i></i></div>
                 <div class="section-joiner-item"><i></i></div>
@@ -159,7 +162,8 @@
                 <div class="section-joiner-item"><i></i></div>
             </div>
         </div>
-        <section class="products-section">
+
+        <section class="products-section none">
             <div class="container whywe-container">
                 <div class="products-section-inner">
                     <h2 class="products-section-title">Продукты 1С</h2>
@@ -174,7 +178,8 @@
                 </div>
             </div>
         </section>
-        <section class="feedback-section">
+
+        <section class="feedback-section none">
             <div class="container feedback-section-container">
                 <h2 class="feedback-section-title">У вас есть вопросы по 1С?</h2>
                 <p class="feedback-section-text">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</p>
@@ -211,10 +216,12 @@
                 <img class="feedback-section-hand yellow-hand" src="{{asset('img/hand-yellow.png')}}">
             </div>
         </section>
-        <section class="projects-section">
+
+        <section class="projects-section none">
             <div class="container projects-container">
                 <h2 class="projects-title">Наши проекты</h2>
             </div>
         </section>
+        
     </main>
 @endsection
