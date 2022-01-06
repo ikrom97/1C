@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCompaniesTable extends Migration
+class CreatePublicationsTable extends Migration
 {
   /**
    * Run the migrations.
@@ -13,10 +13,11 @@ class CreateCompaniesTable extends Migration
    */
   public function up()
   {
-    Schema::create('companies', function (Blueprint $table) {
+    Schema::create('publications', function (Blueprint $table) {
       $table->id();
-      $table->string('logo');
-      $table->string('title');
+      $table->text('title');
+      $table->text('content');
+      $table->string('author');
       $table->string('category');
       $table->boolean('trashed')->default(false);
       $table->timestamps();
@@ -30,6 +31,6 @@ class CreateCompaniesTable extends Migration
    */
   public function down()
   {
-    Schema::dropIfExists('companies');
+    Schema::dropIfExists('publications');
   }
 }
