@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Navigation;
+use App\Models\Page;
 use Illuminate\Database\Seeder;
 
-class NavigationsSeeder extends Seeder
+class PagesSeeder extends Seeder
 {
   /**
    * Run the database seeds.
@@ -14,7 +14,7 @@ class NavigationsSeeder extends Seeder
    */
   public function run()
   {
-    $navigations = array(
+    $pages = array(
       array(
         'id' => 1,
         'title' => 'О нас',
@@ -47,10 +47,10 @@ class NavigationsSeeder extends Seeder
       ),
     );
 
-    foreach ($navigations as $nav) {
-      $table = new Navigation;
-      $table->title = $nav['title'];
-      $table->route = $nav['route'];
+    foreach ($pages as $page) {
+      $table = new Page();
+      $table->title = $page['title'];
+      $table->route = $page['route'];
       $table->save();
     }
   }

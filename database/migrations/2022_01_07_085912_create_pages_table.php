@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateParametersTable extends Migration
+class CreatePagesTable extends Migration
 {
   /**
    * Run the migrations.
@@ -13,12 +13,10 @@ class CreateParametersTable extends Migration
    */
   public function up()
   {
-    Schema::create('parameters', function (Blueprint $table) {
+    Schema::create('pages', function (Blueprint $table) {
       $table->id();
-      $table->text('email');
-      $table->text('phone');
-      $table->text('address');
-      $table->text('copyright');
+      $table->text('title');
+      $table->text('route');
       $table->timestamps();
     });
   }
@@ -30,6 +28,6 @@ class CreateParametersTable extends Migration
    */
   public function down()
   {
-    Schema::dropIfExists('parameters');
+    Schema::dropIfExists('pages');
   }
 }

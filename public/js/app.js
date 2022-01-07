@@ -21,49 +21,42 @@ $.ajaxSetup({
 var header = document.querySelector('.header');
 
 if (header) {
-  //* => products dropdown start
-  var navigation = header.querySelector('.header-navigation'),
-      dropdownOpenBtn = navigation.querySelector('.header-navigation-link--products'),
-      dropdownCloseBtn = navigation.querySelector('.products-navigation-close');
+  //* =>> feedback
+  var body = document.querySelector('body'),
+      feedback = header.querySelector('.feedback'),
+      feedbackOpenBtn = feedback.querySelector('.feedback-open-btn'),
+      feedbackCloseBtn = feedback.querySelector('.feedback-close-btn'),
+      feedbackModalClose = feedback.querySelector('.feedback-modal-close'),
+      feedbackInputs = feedback.querySelectorAll('.feedback-input');
 
-  dropdownOpenBtn.onclick = function (e) {
-    e.preventDefault();
-    navigation.classList.add('show');
+  feedbackOpenBtn.onclick = function () {
+    body.classList.add('feedback');
+    setTimeout(function () {
+      feedbackInputs[0].focus();
+    }, 200);
   };
 
-  dropdownCloseBtn.onclick = function (e) {
-    e.preventDefault();
-    navigation.classList.remove('show');
-  }; //* products dropdown end <=
-  //* => feedback modal
-
-
-  var feedbackOpen = header.querySelector('.feedback-btn'),
-      feedbackModal = header.querySelector('.feedback-modal'),
-      feedbackForm = feedbackModal.querySelector('.feedback-form'),
-      feedbackCloseBtns = feedbackModal.querySelectorAll('[data-action="close-modal"]'),
-      feedbackHand = feedbackModal.querySelector('.feedback-hand');
-
-  feedbackOpen.onclick = function (e) {
-    e.preventDefault();
-    feedbackModal.classList.remove('hidden');
-    feedbackModal.focus();
+  feedbackCloseBtn.onclick = function () {
+    body.classList.remove('feedback');
   };
 
-  feedbackCloseBtns.forEach(function (button) {
-    button.onclick = function (e) {
-      e.preventDefault();
-      feedbackModal.classList.add('hidden');
-    };
-  });
-  feedbackModal.addEventListener('click', function (e) {
-    feedbackForm.classList.remove('fail');
-    feedbackForm.classList.remove('success');
-  });
+  feedbackModalClose.onclick = function () {
+    body.classList.remove('feedback');
+  }; //* <<= feedback
+  //* =>> products dropdown
 
-  if (window.innerHeight < 700 || window.innerWidth < 444) {
-    feedbackHand.style.display = 'none';
-  } //* feedback modal <=
+
+  var dropdown = header.querySelector('.products-dropdown'),
+      dropdownShowBtn = dropdown.querySelector('[data-action="show"]'),
+      dropdownHideBtn = dropdown.querySelector('[data-action="hide"]');
+
+  dropdownShowBtn.onclick = function () {
+    body.classList.add('products-dropdown');
+  };
+
+  dropdownHideBtn.onclick = function () {
+    body.classList.remove('products-dropdown');
+  }; //* <<= products dropdown
 
 }
 })();

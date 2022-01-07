@@ -5,12 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Page extends Model
+class Footer extends Model
 {
-  use HasFactory;
-
-  public function texts()
-  {
-    return $this->hasMany(Text::class);
-  }
+    use HasFactory;
 }

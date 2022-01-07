@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Page extends Model
+class Text extends Model
 {
   use HasFactory;
 
-  public function texts()
+  public function page()
   {
-    return $this->hasMany(Text::class);
+    return $this->belongsTo(Page::class);
   }
 }

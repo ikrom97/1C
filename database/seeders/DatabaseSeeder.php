@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\Admin;
 use App\Models\Certificate;
 use App\Models\Gain;
-use App\Models\Parameter;
 use App\Models\Publication;
 use App\Models\SuccessStep;
 use App\Models\Value;
@@ -24,13 +23,6 @@ class DatabaseSeeder extends Seeder
     $admin->login = 'admin';
     $admin->password = 'admin';
     $admin->save();
-
-    $parameters = new Parameter;
-    $parameters->email = 'diis@orienpharm.tj';
-    $parameters->phone = '+992 988 99 22 11';
-    $parameters->address = 'Таджикистан, г. Душанбе, ул. Шамси 4Б';
-    $parameters->copyright = '© 2021 ООО «Ориён Фарм»';
-    $parameters->save();
 
     // =>> our values
     $values = array(
@@ -83,9 +75,9 @@ class DatabaseSeeder extends Seeder
     // publications <<=
     // =>> gains
     $gains = [
-      'Регулярные обновления программ «1С»',
-      'Доступ к информационной системе 1С:ИТС',
-      'Профессиональную линию консультаций',
+      array('description' => 'Регулярные обновления программ «1С»'),
+      array('description' => 'Доступ к информационной системе 1С:ИТС'),
+      array('description' => 'Профессиональную линию консультаций'),
     ];
     foreach ($gains as $gain) {
       $table = new Gain();
@@ -94,13 +86,14 @@ class DatabaseSeeder extends Seeder
     }
     // gains <<=
     $this->call([
-      NavigationsSeeder::class,
+      PagesSeeder::class,
       AdvantagesSeeder::class,
       ProductsSeeder::class,
       ProjectsSeeder::class,
       CompaniesSeeder::class,
       MembersSeeder::class,
       ServicesSeeder::class,
+      TextsSeeder::class,
     ]);
   }
 }

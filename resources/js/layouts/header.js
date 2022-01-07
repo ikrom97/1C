@@ -1,44 +1,39 @@
 const header = document.querySelector('.header');
 
 if (header) {
-  //* => products dropdown start
-  const navigation = header.querySelector('.header-navigation'),
-    dropdownOpenBtn = navigation.querySelector('.header-navigation-link--products'),
-    dropdownCloseBtn = navigation.querySelector('.products-navigation-close');
+  //* =>> feedback
+  const body = document.querySelector('body'),
+    feedback = header.querySelector('.feedback'),
+    feedbackOpenBtn = feedback.querySelector('.feedback-open-btn'),
+    feedbackCloseBtn = feedback.querySelector('.feedback-close-btn'),
+    feedbackModalClose = feedback.querySelector('.feedback-modal-close'),
+    feedbackInputs = feedback.querySelectorAll('.feedback-input');
 
-  dropdownOpenBtn.onclick = e => {
-    e.preventDefault();
-    navigation.classList.add('show');
+  feedbackOpenBtn.onclick = () => {
+    body.classList.add('feedback');
+    setTimeout(() => {
+      feedbackInputs[0].focus();
+    }, 200)
   }
-  dropdownCloseBtn.onclick = e => {
-    e.preventDefault();
-    navigation.classList.remove('show');
+  feedbackCloseBtn.onclick = () => {
+    body.classList.remove('feedback');
   }
-  //* products dropdown end <=
-  //* => feedback modal
-  const feedbackOpen = header.querySelector('.feedback-btn'),
-    feedbackModal = header.querySelector('.feedback-modal'),
-    feedbackForm = feedbackModal.querySelector('.feedback-form'),
-    feedbackCloseBtns = feedbackModal.querySelectorAll('[data-action="close-modal"]'),
-    feedbackHand = feedbackModal.querySelector('.feedback-hand');
+  feedbackModalClose.onclick = () => {
+    body.classList.remove('feedback');
+  }
+  //* <<= feedback
 
-  feedbackOpen.onclick = e => {
-    e.preventDefault();
-    feedbackModal.classList.remove('hidden');
-    feedbackModal.focus();
+  //* =>> products dropdown
+  const dropdown = header.querySelector('.products-dropdown'),
+    dropdownShowBtn = dropdown.querySelector('[data-action="show"]'),
+    dropdownHideBtn = dropdown.querySelector('[data-action="hide"]');
+
+  dropdownShowBtn.onclick = () => {
+    body.classList.add('products-dropdown');
   }
-  feedbackCloseBtns.forEach(button => {
-    button.onclick = e => {
-      e.preventDefault();
-      feedbackModal.classList.add('hidden');
-    }
-  });
-  feedbackModal.addEventListener('click', e => {
-    feedbackForm.classList.remove('fail');
-    feedbackForm.classList.remove('success');
-  });
-  if (window.innerHeight < 700 || window.innerWidth < 444) {
-    feedbackHand.style.display = 'none';
+
+  dropdownHideBtn.onclick = () => {
+    body.classList.remove('products-dropdown');
   }
-  //* feedback modal <=
+  //* <<= products dropdown
 }

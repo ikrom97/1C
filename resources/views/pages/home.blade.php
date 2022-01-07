@@ -169,11 +169,11 @@
                     <h2 class="products-section-title">Продукты 1С</h2>
                     <p class="products-section-subtitle">Сертифицированные специалисты имеют достаточный опыт по внедрению программных продуктов 1С в самых различных отраслях.</p>
                     <ul class="products-list">
-                        @foreach ($products as $product)
+                        {{-- @foreach ($products as $product)
                             <li class="products-list-item">
                                 <x-products-card :product="$product" />
                             </li>
-                        @endforeach
+                        @endforeach --}}
                     </ul>
                 </div>
             </div>
